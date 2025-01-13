@@ -1,0 +1,20 @@
+//ШРИФТ ПО УМОЛЧАНИЮ>
+
+@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:wght@200..700&display=swap");
+
+// ФАЙЛ ОБНУЛЯЮЩИХ СТИЛЕЙ>
+@import "./components/nullstyle";
+
+// ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
+@import "./Layouts/header";
+@import "./Layouts/footer";
+@import "./Layouts/wrapper";
+
+//ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>
+@import "./components/ui";
+@import "./components/mixins";
+
+:root {
+	--bg-color: #faf6ed;
+	--title-color: #1d75b4;
+}
