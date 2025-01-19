@@ -85,6 +85,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 15px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   overflow: hidden;
   display: flex;
@@ -466,4 +470,106 @@ body._lock {
 }
 .show__main--contacts .contacts__grid--item {
   max-height: 240px;
+  display: flex;
+  gap: 38px;
+}
+.show__main--contacts .contacts__grid--item img {
+  border-radius: 10px;
+}
+.show__main--contacts .contacts__grid--item .grid__text {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Garamond;
+  color: rgb(254, 250, 239);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 112.5%;
+}
+.show__main--contacts .contacts__grid--item .grid__text span {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Garamond;
+  color: rgb(254, 250, 239);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 112.5%;
+}
+.show__main--contacts .contacts__grid--item .grid__text:not(:last-child) {
+  margin-bottom: 17px;
+}
+.show__main--contacts .contacts__grid--item .grid__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.show__main--contacts .contacts__grid--item .grid__block p {
+  text-transform: uppercase;
+  font-family: Garamond;
+  color: rgb(254, 250, 239);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 111.5384615385%;
+  text-align: left;
+}
+.show__main--contacts .contacts__grid--item .grid__block span {
+  font-family: Garamond;
+  color: rgb(254, 250, 239);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120.8333333333%;
+  text-align: left;
+}
+.show__main--contacts .contacts__grid--item .grid__block a {
+  font-family: Garamond;
+  color: rgb(254, 250, 239);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120.8333333333%;
+  text-align: left;
+}
+.show__main--contacts .contacts__grid .grid__blocktext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer {
+  width: 100%;
+  background: #4c4a4a;
+  border-top: 1px solid #000;
+}
+.footer__content {
+  margin-top: 110px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 32px;
+}
+.footer__content--politic {
+  font-family: Garamond;
+  color: rgb(254, 250, 239);
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 111.5384615385%;
+  text-align: left;
+}
+.footer__content--links {
+  display: flex;
+  gap: 50px;
+}
+.footer__content--links a {
+  text-transform: uppercase;
+  font-family: Garamond;
+  color: rgb(254, 250, 239);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 115%;
+  text-align: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 0.43px solid rgb(0, 0, 0);
+  border-radius: 21.3px;
+  background: rgb(50, 49, 49);
 }

@@ -248,7 +248,83 @@
 			row-gap: 69px;
 			&--item {
 				max-height: 240px;
+				@include flexbox;
+				gap: 38px;
+				img {
+					border-radius: 10px;
+				}
+				.grid__text {
+					display: block;
+					text-align: center;
+					text-transform: uppercase;
+					@include textDefault($ff1, rgb(254, 250, 239), 24px, 700, 27px);
+					span {
+						text-align: center;
+						text-transform: capitalize;
+						@include textDefault($ff1, rgb(254, 250, 239), 24px, 400, 27px);
+					}
+					&:not(:last-child) {
+						margin-bottom: 17px;
+					}
+				}
+				.grid__block {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					p {
+						text-transform: uppercase;
+						@include textDefault($ff1, rgb(254, 250, 239), 26px, 700, 29px);
+						text-align: left;
+					}
+					span {
+						@include textDefault($ff1, rgb(254, 250, 239), 24px, 400, 29px);
+						text-align: left;
+					}
+					a {
+						@include textDefault($ff1, rgb(254, 250, 239), 24px, 400, 29px);
+						text-align: left;
+					}
+				}
 			}
+			.grid__blocktext {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+		}
+	}
+}
+
+//=======================================================================
+
+.footer {
+	width: 100%;
+	background: #4c4a4a;
+	border-top: 1px solid #000;
+	&__content {
+		margin-top: 110px;
+		padding: 0 40px;
+		@include flexbox;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 32px;
+		&--politic {
+			@include textDefault($ff1, rgb(254, 250, 239), 26px, 400, 29px);
+			text-align: left;
+		}
+		&--links {
+			a {
+				text-transform: uppercase;
+				@include textDefault($ff1, rgb(254, 250, 239), 20px, 400, 23px);
+				text-align: center;
+				padding: 10px 20px;
+				box-sizing: border-box;
+				border: 0.43px solid rgb(0, 0, 0);
+				border-radius: 21.3px;
+				background: rgb(50, 49, 49);
+			}
+			@include flexbox;
+			gap: 50px;
 		}
 	}
 }
