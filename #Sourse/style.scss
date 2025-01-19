@@ -1,6 +1,6 @@
 //ШРИФТ ПО УМОЛЧАНИЮ>
 
-@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..800&display=swap");
 
 // ФАЙЛ ОБНУЛЯЮЩИХ СТИЛЕЙ>
 @import "./components/nullstyle";
@@ -9,12 +9,11 @@
 @import "./Layouts/header";
 @import "./Layouts/footer";
 @import "./Layouts/wrapper";
+@import "./Layouts/homePage";
 
 //ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>
 @import "./components/ui";
 @import "./components/mixins";
 
 :root {
-	--bg-color: #faf6ed;
-	--title-color: #1d75b4;
 }
