@@ -1,0 +1,35 @@
+@import "../components/ui";
+@import "../components/mixins";
+
+//=======================================================================
+
+.models__header {
+	padding: 50px 0;
+}
+
+.main__models {
+	.models__grid {
+		display: grid;
+		grid-template-columns: repeat(5, 180px);
+		grid-template-rows: repeat(2, 240px);
+		column-gap: 100px;
+		row-gap: 71px;
+		&--item {
+			position: relative;
+			object-fit: contain;
+			width: 180px;
+			height: 240px;
+			word-break: break-all;
+			span {
+				position: absolute;
+				width: 100px;
+				height: 100%;
+				top: 22%;
+				left: 50%;
+				transform: translate(-50%, 0);
+				@include textDefault($ff2, rgb(255, 255, 255), 29px, 200, 29px);
+				text-align: center;
+			}
+		}
+	}
+}
