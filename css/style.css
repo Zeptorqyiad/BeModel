@@ -262,7 +262,8 @@ body._lock {
   flex-direction: column;
   margin-bottom: 160px;
 }
-.show__main--casting h1 {
+
+.casting__title {
   text-transform: uppercase;
   text-align: center;
   font-family: Garamond;
@@ -572,4 +573,32 @@ body._lock {
   border: 0.43px solid rgb(0, 0, 0);
   border-radius: 21.3px;
   background: rgb(50, 49, 49);
+}
+
+.header__casting {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+.header__casting h2 {
+  font-family: Garamond;
+  color: rgb(254, 250, 239);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 112.5%;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.header__casting img {
+  max-width: 254px;
+}
+
+.casting__btn {
+  box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.3058823529);
 }

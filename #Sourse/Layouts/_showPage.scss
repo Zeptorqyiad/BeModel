@@ -78,12 +78,12 @@
 	@include flexbox;
 	flex-direction: column;
 	margin-bottom: 160px;
-	h1 {
-		text-transform: uppercase;
-		text-align: center;
-		@include textDefault($ff1, rgb(254, 250, 239), 48px, 400, 54px);
-		margin-bottom: 42px;
-	}
+}
+.casting__title {
+	text-transform: uppercase;
+	text-align: center;
+	@include textDefault($ff1, rgb(254, 250, 239), 48px, 400, 54px);
+	margin-bottom: 42px;
 }
 .casting__subtitle {
 	text-align: center;
