@@ -90,6 +90,16 @@
 	@include textDefault($ff1, rgb(254, 250, 239), 40px, 400, 45px);
 	margin-bottom: 50px;
 }
+input[type="date"]:before {
+	content: attr(placeholder);
+	position: absolute;
+	color: rgb(254, 250, 239);
+	text-align: left;
+}
+input[type="date"]:focus:before {
+	content: none;
+	position: absolute;
+}
 .casting__form {
 	@include flexbox;
 	flex-direction: column;
@@ -125,7 +135,7 @@
 				margin: 0;
 			}
 			&::-webkit-calendar-picker-indicator {
-				display: none;
+				cursor: pointer;
 			}
 		}
 	}
@@ -224,8 +234,21 @@
 	white-space: nowrap;
 }
 .about__image img {
-	width: 100%;
-	max-height: 495px;
+	min-width: 100vw;
+	height: 495px;
+}
+.parallax-container {
+	height: 495px;
+	overflow: hidden;
+	position: relative;
+}
+.parallax-image {
+	height: 100%;
+	background-image: url("../../assets/img/showPage/topContentImage.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	opacity: 0.8;
 }
 
 //=======================================================================
@@ -328,3 +351,5 @@
 		}
 	}
 }
+
+//=======================================================================
