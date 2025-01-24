@@ -5,30 +5,49 @@
 
 .models__header {
 	padding: 50px 0;
+	position: relative;
+	a {
+		position: absolute;
+		top: 55px;
+		left: 60px;
+	}
 }
 
+//=======================================================================
+
 .main__models {
-	.models__grid {
+	margin-bottom: 100px;
+	&--gridContent {
 		display: grid;
-		grid-template-columns: repeat(5, 180px);
-		grid-template-rows: repeat(2, 240px);
-		column-gap: 100px;
-		row-gap: 71px;
-		&--item {
-			position: relative;
-			object-fit: contain;
-			width: 180px;
-			height: 240px;
-			word-break: break-all;
-			span {
-				position: absolute;
-				width: 100px;
-				height: 100%;
-				top: 22%;
-				left: 50%;
-				transform: translate(-50%, 0);
-				@include textDefault($ff2, rgb(255, 255, 255), 29px, 200, 29px);
-				text-align: center;
+		grid-gap: 40px;
+		grid-template-columns: repeat(3, minmax(150px, 400px));
+		justify-content: space-around;
+	}
+	&--item {
+		position: relative;
+		overflow: hidden; // Скрытый блок figcaption
+		img {
+			max-width: 400px;
+			width: 100%;
+		}
+	}
+	&--desc {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateY(270px) translate(-50%, 0);
+		white-space: nowrap;
+		overflow: visible;
+		z-index: 999;
+		p {
+			@include textDefault($ff1, #000, 28px, 400, 32px);
+			text-align: left;
+			&:nth-child(1) {
+				font-weight: 700;
+				margin-bottom: 50px;
+			}
+			&:not(:nth-child(1)) {
+				margin-left: 30px;
 			}
 		}
 	}

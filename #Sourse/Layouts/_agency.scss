@@ -137,7 +137,10 @@
 	margin-bottom: 60px;
 }
 .castingAbout__text {
-	text-align: left !important;
+	text-align: center !important;
+	display: flex;
+	flex: 1 1 auto;
+	justify-content: center;
 }
 
 //=======================================================================
@@ -153,7 +156,7 @@
 		text-transform: uppercase;
 		@include textDefault($ff1, rgb(254, 250, 239), 34px, 400, 38px);
 	}
-	margin-bottom: 100px;
+	margin-bottom: -100px;
 }
 .itemVideo {
 	background-image: none !important;

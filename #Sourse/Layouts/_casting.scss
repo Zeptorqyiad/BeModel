@@ -4,20 +4,30 @@
 //=======================================================================
 
 .header__casting {
-	display: flex;
-	flex-direction: column;
-	gap: 14px;
-	justify-content: center;
-	align-items: center;
+	position: relative;
 	margin-top: 50px;
 	margin-bottom: 120px;
-	h2 {
-		@include textDefault($ff1, rgb(254, 250, 239), 64px, 400, 72px);
-		text-align: center;
-		user-select: none;
+	&--logo {
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+		justify-content: center;
+		align-items: center;
+		h2 {
+			@include textDefault($ff1, rgb(254, 250, 239), 64px, 400, 72px);
+			text-align: center;
+			user-select: none;
+		}
+		img {
+			max-width: 254px;
+		}
 	}
-	img {
-		max-width: 254px;
+	&--link {
+		@include textDefault($ff1, rgb(254, 250, 239), 24px, 400, 27px);
+		text-transform: uppercase;
+		position: absolute;
+		top: 25px;
+		left: 80px;
 	}
 }
 .casting__btn {

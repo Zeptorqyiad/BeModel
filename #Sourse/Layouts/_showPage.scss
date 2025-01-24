@@ -9,13 +9,14 @@
 .header__content {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .header__leftside {
-	flex: 1 1 100%;
+	@include flexbox;
+	gap: 70px;
 }
 .header__logotype {
-	margin-right: 15%;
 }
 .header__rightside {
 	display: flex;
@@ -58,7 +59,6 @@
 	&--item {
 		@include flexbox;
 		align-items: center;
-		justify-content: space-between;
 		gap: 90px;
 		img {
 			max-width: 280px;
@@ -312,7 +312,6 @@ input[type="date"]:focus:before {
 			.grid__blocktext {
 				display: flex;
 				flex-direction: column;
-				justify-content: center;
 			}
 		}
 	}
@@ -353,3 +352,21 @@ input[type="date"]:focus:before {
 }
 
 //=======================================================================
+
+.instaLink {
+	@include flexbox;
+	justify-content: center;
+	gap: 13px;
+	align-items: center;
+	img {
+		max-width: 45px;
+	}
+	span {
+		@include textDefault($ff1, rgb(255, 255, 255), 24px, 700, 27px);
+		text-align: center;
+	}
+}
+.grid__blocktext.contacts__grid--item {
+	gap: 10px;
+	justify-content: flex-start;
+}
