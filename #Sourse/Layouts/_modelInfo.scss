@@ -2,3 +2,65 @@
 @import "../components/mixins";
 
 //=======================================================================
+
+.modelInfo__wrapper {
+	height: 100vh !important;
+}
+.main__modelInfo {
+	overflow: hidden;
+	overflow-y: scroll;
+	&::-webkit-scrollbar {
+		width: 0;
+	}
+	&--content {
+		@include flexbox;
+		justify-content: space-between;
+		min-height: 100%;
+		position: relative;
+		gap: 100px;
+	}
+	&--leftside {
+		.leftside__desc {
+			margin-top: 50px;
+			position: sticky;
+			top: 50px;
+			p {
+				text-align: left;
+				&:nth-child(1) {
+					@include textDefault($ff1, white, 32px, 700, 36px);
+					margin-bottom: 70px;
+					max-width: 200px;
+				}
+				&:not(:nth-child(1)) {
+					@include textDefault($ff1, white, 28px, 400, 33px);
+					text-align: left;
+				}
+			}
+		}
+		.instaBlock {
+			@include flexbox;
+			gap: 15px;
+			align-items: center;
+			margin-top: 56px;
+			span {
+				@include textDefault($ff1, white, 24px, 400, 27px);
+			}
+		}
+	}
+	&--rightside {
+		flex: 0 1 960px;
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		img {
+			cursor: pointer;
+		}
+	}
+}
+
+//=======================================================================
+
+.model__footer {
+	margin-top: 70px;
+}
