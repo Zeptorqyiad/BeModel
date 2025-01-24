@@ -1014,3 +1014,62 @@ input[type=date]:focus:before {
 .model__footer {
   margin-top: 70px;
 }
+
+.fullImage__content {
+  max-height: 100vh;
+  position: relative;
+  min-width: 90vw;
+  margin-top: 60px;
+}
+.fullImage__content--paginate {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: Garamond;
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 113.8888888889%;
+}
+.fullImage__content--toolbar {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+  margin-left: 46%;
+  overflow: visible;
+}
+.fullImage__content--toolbar img {
+  max-width: 120px;
+  max-height: 170px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.fullImage__content .fullImage {
+  display: block;
+  margin: 0 auto;
+  width: 480px;
+}
+
+.close__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  cursor: pointer;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  transform: translate(0, -40%);
+  transform: rotate(180deg);
+  cursor: pointer;
+}
