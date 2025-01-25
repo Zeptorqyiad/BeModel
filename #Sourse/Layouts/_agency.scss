@@ -126,10 +126,6 @@
 
 //=======================================================================
 
-.show__main--about {
-	margin-top: 115px;
-	margin-bottom: 225px;
-}
 .beModel--aboutTitle {
 	@include textDefault($ff1, rgb(254, 250, 239), 45px, 400, 51px);
 	text-transform: uppercase;

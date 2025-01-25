@@ -7,6 +7,7 @@
 	position: relative;
 	margin-top: 50px;
 	margin-bottom: 120px;
+	cursor: pointer;
 	&--logo {
 		display: flex;
 		flex-direction: column;
@@ -21,13 +22,6 @@
 		img {
 			max-width: 254px;
 		}
-	}
-	&--link {
-		@include textDefault($ff1, rgb(254, 250, 239), 24px, 400, 27px);
-		text-transform: uppercase;
-		position: absolute;
-		top: 25px;
-		left: 80px;
 	}
 }
 .casting__btn {

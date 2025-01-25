@@ -15,6 +15,30 @@
 		<header class="header">
 			<div class="header_container">
 				<div class="header__content">
+
+					<!-- Burger Menu -->
+					<!-- При добавлении класса "open" ↓ бургер открывается -->
+					<div class="burger__list">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<!-- При добавлении класса "open" ↓ меню открывается -->
+					<div class="burger__menu">
+						<a class="burger__menu--link" href="./index.html">Home</a>
+						<a class="burger__menu--link" href="./casting.html">Casting</a>
+						<a class="burger__menu--link" href="#about">About us</a>
+						<a class="burger__menu--link" href="#contacts">Contact</a>
+						<div class="burger__menu--bottomBlock">
+							<div class="burger__menu--image">
+								<img src="./assets/icon/BurgerIcon.png" alt="BurgerLogo">
+							</div>
+							<a href="#about">ios</a>
+							<a href="#contacts">android</a>
+						</div>
+					</div>
+					<!-- Burger Menu -->
+
 					<div class="header__leftside">
 						<a class="header__link" href="./index.html">Home</a>
 						<a class="header__link" href="./casting.html">Casting</a>
@@ -30,10 +54,10 @@
 			</div>
 		</header>
 		<main class="show__main">
-			<sectio class="show__main--about">
+			<section class="show__main--about">
 				<p class="show__main--subtitle __container">
-					Это масштабное телевизионное шоу, где 25 красивых, воспитанных <br>
-					и молодых девушек из разных городов России вступают в борьбу за право <br>
+					Это масштабное телевизионное шоу, где 25 красивых, воспитанных
+					и молодых девушек из разных городов России вступают в борьбу за право
 					стать новым лицом крупного модельного агентства и следующей топ-моделью России.
 				</p>
 
@@ -43,36 +67,39 @@
 				</div>
 				<!-- Параллакс контейнер -->
 
-				<div class="show__main--taskContent __container">
-					<div id="about" class="show__main--item">
+				<!-- Пришлось переписать на Grid с новыми тегами -->
+				<div id="about" class="show__main--taskContent __container">
+					<div class="show__main--item item-1">
 						<img src="./assets/img/showPage/main/taskImage1.png" alt="taskImage">
-						<p>
-							На протяжении 12 эпизодов зрители становятся свидетелями
-							увлекательного путешествия, в котором начинающие модели проходят
-							через серию сложных и зрелищных испытаний, которые требуют не
-							только внешней привлекательности, а также воспитания,
-							эрудированности, интеллектуальных способностей, творческого подхода
-							и командной работы.
-						</p>
 					</div>
-					<div class="show__main--item">
-						<p>
-							Каждая участница - это пример интеллигентности, внутренней силы,
-							красоты и порядочности, который поможет создать новый стандарт
-							для современной российской модели.
-						</p>
+					<div class="show__main--item item-2">
+						На протяжении 12 эпизодов зрители становятся свидетелями
+						увлекательного путешествия, в котором начинающие модели проходят
+						через серию сложных и зрелищных испытаний, которые требуют не
+						только внешней привлекательности, а также воспитания,
+						эрудированности, интеллектуальных способностей, творческого подхода
+						и командной работы.
+					</div>
+					<div class="show__main--item item-3">
 						<img src="./assets/img/showPage/main/taskImage2.png" alt="taskImage">
 					</div>
-					<div class="show__main--item">
+					<div class="show__main--item item-4">
+						Каждая участница - это пример интеллигентности, внутренней силы,
+						красоты и порядочности, который поможет создать новый стандарт
+						для современной российской модели.
+					</div>
+					<div class="show__main--item item-5">
 						<img src="./assets/img/showPage/main/taskImage3.png" alt="taskImage">
-						<p>
-							Победительница получит ценный приз - квартира в престижном
-							районе Москвы. Титул "Следующая том-модель России",
-							а так же выгодный модельный контракт и другие призы
-						</p>
+					</div>
+					<div class="show__main--item item-6">
+						Победительница получит ценный приз - квартира в престижном
+						районе Москвы. Титул "Следующая том-модель России",
+						а так же выгодный модельный контракт и другие призы
 					</div>
 				</div>
-			</sectio>
+				<!-- Пришлось переписать на Grid с новыми тегами -->
+
+			</section>
 			<section class="show__main--casting __container">
 				<h1 class="casting__title">
 					Открыт кастинг
@@ -142,7 +169,7 @@
 						<div class="imageForm__item">
 							<label for=""></label>
 							<input name="fullHeight" type="file">
-							<span style="font-weight: 700;">
+							<span>
 								<strong>ФОТО ФИГУРЫ</strong>
 								в полный рост
 							</span>
@@ -200,10 +227,14 @@
 							<br>
 							<span>info@bemodels.pro</span>
 						</p>
+
+						<!-- Новое добавление в дизайне -->
 						<div class="instaLink">
 							<img src="./assets/icon/Instagram.svg" alt="Instagram">
 							<span>bemodel.management</span>
 						</div>
+						<!-- Новое добавление в дизайне -->
+
 					</div>
 					<div class="contacts__grid--item">
 						<img src="./assets/img/showPage/contacts/3.png" alt="">
@@ -227,8 +258,12 @@
 					@2025 Все права защищены.
 				</p>
 				<div class="footer__content--links">
+
+					<!-- Новые кнопки -->
 					<a href="##">ios</a>
 					<a href="##">android</a>
+					<!-- Новые кнопки -->
+
 					<a href="##">О шоу</a>
 					<a href="./casting.html">Подать заявку</a>
 					<a href="#contacts">Контакты</a>

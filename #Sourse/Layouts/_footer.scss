@@ -1,1 +1,54 @@
 @import "../components/ui";
+@import "../components/mixins";
+
+//=======================================================================
+
+.footer {
+	width: 100%;
+	background: #4c4a4a;
+	border-top: 1px solid #000;
+	&__content {
+		margin-top: 110px;
+		padding: 0 40px;
+		@include flexbox;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 32px;
+		@media (max-width: 1334.98px) {
+			flex-direction: column-reverse;
+			gap: 40px;
+			margin-top: 40px;
+		}
+		&--politic {
+			@include textDefault($ff1, rgb(254, 250, 239), 26px, 400, 29px);
+			text-align: left;
+			@media (max-width: 500.98px) {
+				font-size: 5.4vw;
+				text-align: center;
+			}
+		}
+		&--links {
+			a {
+				text-transform: uppercase;
+				@include textDefault($ff1, rgb(254, 250, 239), 20px, 400, 23px);
+				text-align: center;
+				padding: 10px 20px;
+				box-sizing: border-box;
+				border: 0.43px solid rgb(0, 0, 0);
+				border-radius: 21.3px;
+				background: rgb(50, 49, 49);
+				white-space: nowrap;
+			}
+			@include flexbox;
+			gap: 50px;
+			@media (max-width: 934.98px) {
+				justify-content: center;
+				flex-wrap: wrap;
+				gap: 20px;
+			}
+			@media (max-width: 462.98px) {
+				flex-direction: column-reverse;
+			}
+		}
+	}
+}
