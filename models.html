@@ -12,11 +12,47 @@
 
 <body>
 	<div class="wrapper">
-		<header class="models__header">
-			<a href="./index.html" class="header__logotype casting__logoBlock">
-				<img src="./assets/icon/Logotype.png" alt="Logotype">
-				<span>MODELS</span>
-			</a>
+		<header class="header">
+			<div class="header_container">
+				<div class="header__content">
+
+					<!-- Burger Menu -->
+					<!-- При добавлении класса "open" ↓ бургер открывается -->
+					<div class="burger__list">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<!-- При добавлении класса "open" ↓ меню открывается -->
+					<div class="burger__menu">
+						<a class="burger__menu--link" href="./index.html">Home</a>
+						<a class="burger__menu--link" href="./casting.html">Casting</a>
+						<a class="burger__menu--link" href="#about">About us</a>
+						<a class="burger__menu--link" href="#contacts">Contact</a>
+						<div class="burger__menu--bottomBlock">
+							<div class="burger__menu--image">
+								<img src="./assets/icon/BurgerIcon.png" alt="BurgerLogo">
+							</div>
+							<a href="#about">ios</a>
+							<a href="#contacts">android</a>
+						</div>
+					</div>
+					<!-- Burger Menu -->
+
+					<div class="header__leftside">
+						<a class="header__link" href="./index.html">Home</a>
+						<a class="header__link" href="./casting.html">Casting</a>
+					</div>
+					<div class="header__logotype">
+						<img src="./assets/icon/Logotype.png" alt="Logotype">
+						<span>MODELS</span>
+					</div>
+					<div class="header__rightside">
+						<a class="header__link" href="#about">About us</a>
+						<a class="header__link" href="#contacts">Contact</a>
+					</div>
+				</div>
+			</div>
 		</header>
 		<main class="main__models">
 			<div class="main__models--gridContent __container">
@@ -145,7 +181,7 @@
 					@2025 Все права защищены.
 				</p>
 				<div class="footer__content--links">
-		
+
 					<!-- Новые кнопки -->
 					<a href="##">
 						<img src="./assets/icon/AppStore.png" alt="AppStoreLink">
@@ -154,7 +190,7 @@
 						<img src="./assets/icon/GooglePlay.png" alt="GooglePlayLink">
 					</a>
 					<!-- Новые кнопки -->
-		
+
 					<a class="footer__content--link" href="##">О шоу</a>
 					<a class="footer__content--link" href="./casting.html">Подать заявку</a>
 					<a class="footer__content--link" href="#contacts">Контакты</a>

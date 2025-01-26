@@ -5,6 +5,14 @@
 
 .models__header {
 	padding: 50px 0;
+	position: relative;
+	&--back {
+		position: absolute;
+		top: 70px;
+		left: 40px;
+		@include textDefault($ff1, rgb(254, 250, 239), 24px, 400, 27px);
+		text-align: left;
+	}
 }
 
 //=======================================================================

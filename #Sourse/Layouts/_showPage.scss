@@ -36,6 +36,29 @@
 	display: none;
 	visibility: hidden;
 }
+.header__logotype {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	align-items: center;
+	@media (max-width: 1024.98px) {
+		gap: 10px;
+	}
+	@media (max-width: 579.98px) {
+		gap: 5px;
+	}
+	span {
+		@include textDefault($ff1, rgb(254, 250, 239), 42px, 400, 47px);
+		text-align: left;
+		margin-right: 15px;
+		@media (max-width: 1024.98px) {
+			font-size: 34px;
+		}
+		@media (max-width: 579.98px) {
+			font-size: 22px;
+		}
+	}
+}
 
 @media (max-width: 1079.98px) {
 	.header__leftside {
@@ -127,7 +150,7 @@
 		position: absolute;
 		border-radius: 15px;
 		width: 320px;
-		height: 500px;
+		height: 600px;
 		z-index: 99;
 		top: 85px;
 		left: 0;
@@ -163,26 +186,13 @@
 				border-radius: 25px;
 				background: #fefaef;
 			}
-			img {
-				max-width: 45px;
-			}
-			a {
-				text-transform: lowercase;
-				@include textDefault($ff1, #323131, 24px, 700, 26px);
-				text-align: center;
-				box-sizing: border-box;
-				border: 0.23px solid #323131;
-				border-radius: 25px;
-				background: #fefaef;
-				padding: 4px 12px;
-			}
 		}
 	}
 }
 @media (max-width: 579.98px) {
 	.header {
 		padding: 20px 0 0 0;
-		min-height: 50px;
+		min-height: 62px;
 	}
 	.header__logotype img {
 		max-width: 200px;
@@ -473,6 +483,23 @@
 	@include flexbox;
 	flex-direction: column;
 	margin-bottom: 160px;
+	padding: 30px 30px 100px 30px;
+	position: relative;
+	z-index: 999;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		background-image: url("../../assets/img/castingPage/castingImage.jpeg");
+		background-position: 0 0;
+		background-size: cover;
+		background-repeat: no-repeat;
+		filter: opacity(30%);
+	}
 	@media (max-width: 576.98px) {
 		margin-bottom: 50px;
 	}
@@ -527,6 +554,34 @@ input[type="date"]:focus:before {
 	}
 	&--column {
 		max-width: 513px;
+		select {
+			max-width: 513px;
+			width: 100%;
+			border-bottom: 2px solid #fefaef;
+			background-color: transparent;
+			padding-left: 20px;
+			height: 36px;
+			margin-bottom: 35px;
+			cursor: pointer;
+
+			@include textDefault($ff1, #fefaef, 32px, 400, 36px);
+			text-align: left;
+			@media (max-width: 1079.98px) {
+				font-size: 24px;
+			}
+			@media (max-width: 761.98px) {
+				font-size: 18px;
+				padding-left: 10px;
+				margin-bottom: 16px;
+			}
+			// Центровка input
+			@media (max-width: 576.98px) {
+				text-align: center;
+			}
+			option {
+				background: #1e1e1e;
+			}
+		}
 		input {
 			max-width: 513px;
 			width: 100%;

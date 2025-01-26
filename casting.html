@@ -14,8 +14,8 @@
 	<div class="wrapper">
 		<header class="header__casting">
 			<a href="./index.html" class="header__casting--logo">
-				<h2>Будь моделью</h2>
 				<img src="./assets/icon/Logotype.png" alt="Logotype">
+				<span>Будь моделью</span>
 			</a>
 		</header>
 		<main>
@@ -40,7 +40,14 @@
 							<label for="waist"></label>
 							<input placeholder="Объем талии" id="waist" name="waist" type="number">
 							<label for="eyes"></label>
-							<input placeholder="Цвет глаз" id="eyes" name="eyes" type="text">
+							<select id="eyes" name="eyes">
+								<option value="" disabled selected hidden>Цвет глаз</option>
+								<option value="">Карие</option>
+								<option value="">Голубые</option>
+								<option value="">Зелёные</option>
+								<option value="">Чёрные</option>
+								<option value="">Серые</option>
+							</select>
 							<label for="instagram"></label>
 							<input placeholder="Профиль Instagram" id="instagram" name="instagram" type="url">
 						</div>
@@ -56,7 +63,14 @@
 							<label for="HipVolume"></label>
 							<input placeholder="Объём бёдер" id="HipVolume" name="HipVolume" type="number">
 							<label for="hairColor"></label>
-							<input placeholder="Цвет волос" id="hairColor" name="hairColor" type="text">
+							<select id="eyes" name="eyes">
+								<option value="" disabled selected hidden>Цвет волос</option>
+								<option value="">Блондинка</option>
+								<option value="">Шатенка</option>
+								<option value="">Русая</option>
+								<option value="">Брюнетка</option>
+								<option value="">Рыжая</option>
+							</select>
 							<label for="vk"></label>
 							<input placeholder="Профиль VK" id="vk" name="vk" type="url">
 						</div>
@@ -108,7 +122,7 @@
 					@2025 Все права защищены.
 				</p>
 				<div class="footer__content--links">
-		
+
 					<!-- Новые кнопки -->
 					<a href="##">
 						<img src="./assets/icon/AppStore.png" alt="AppStoreLink">
@@ -117,7 +131,7 @@
 						<img src="./assets/icon/GooglePlay.png" alt="GooglePlayLink">
 					</a>
 					<!-- Новые кнопки -->
-		
+
 					<a class="footer__content--link" href="##">О шоу</a>
 					<a class="footer__content--link" href="./casting.html">Подать заявку</a>
 					<a class="footer__content--link" href="#contacts">Контакты</a>

@@ -7,6 +7,10 @@
 	position: relative;
 	margin-top: 50px;
 	margin-bottom: 120px;
+	@media (max-width: 549.98px) {
+		margin-top: 20px;
+		margin-bottom: 60px;
+	}
 	cursor: pointer;
 	&--logo {
 		display: flex;
@@ -14,13 +18,22 @@
 		gap: 14px;
 		justify-content: center;
 		align-items: center;
-		h2 {
-			@include textDefault($ff1, rgb(254, 250, 239), 64px, 400, 72px);
+		span {
+			@include textDefault($ff1, rgb(254, 250, 239), 48px, 400, 48px);
 			text-align: center;
 			user-select: none;
+			text-transform: uppercase;
+			@media (max-width: 549.98px) {
+				font-size: 24px;
+			}
 		}
 		img {
 			max-width: 254px;
 		}
+	}
+}
+@media (max-width: 549.98px) {
+	.casting__btn {
+		margin-top: 0;
 	}
 }
