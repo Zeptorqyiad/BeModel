@@ -39,3 +39,20 @@ body {
 body._lock {
 	overflow: hidden;
 }
+
+//=======================================================================
+
+.beModel__content--btn,
+.casting__model--btn,
+.form__btn,
+.casting__btn {
+	box-shadow: none;
+	transition: box-shadow 0.3s;
+	will-change: box-shadow;
+}
+.beModel__content--btn:hover,
+.casting__model--btn:hover,
+.form__btn:hover,
+.casting__btn:hover {
+	box-shadow: 0px 0px 40px 0px #ffffff4e;
+}

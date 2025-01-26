@@ -14,6 +14,29 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header_container">
+				<!-- Burger Menu -->
+				<!-- При добавлении класса "open" ↓ бургер открывается -->
+				<div class="burger__list">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<!-- При добавлении класса "open" ↓ меню открывается -->
+				<div class="burger__menu">
+					<a class="burger__menu--link" href="./index.html">Home</a>
+					<a class="burger__menu--link" href="./casting.html">Casting</a>
+					<a class="burger__menu--link" href="#about">About us</a>
+					<a class="burger__menu--link" href="#contacts">Contact</a>
+					<div class="burger__menu--bottomBlock">
+						<div class="burger__menu--image">
+							<img src="./assets/icon/BurgerIcon.png" alt="BurgerLogo">
+						</div>
+						<a href="#about">ios</a>
+						<a href="#contacts">android</a>
+					</div>
+				</div>
+				<!-- Burger Menu -->
+
 				<div class="header__content header__casting_content">
 					<div class="header__leftside casting__ls">
 						<a class="header__link" href="./index.html">Home</a>
@@ -24,7 +47,7 @@
 						<span>MANAGEMENT</span>
 					</div>
 					<div class="header__rightside">
-						<a class="header__link" href="#about">About us</a>
+						<a class="header__link" href="./aboutAgency.html">About us</a>
 						<a class="header__link" href="#contacts">Contact</a>
 					</div>
 				</div>
@@ -71,34 +94,51 @@
 					<img src="./assets/icon/LogoDark.png" alt="Logotype">
 				</a>
 			</div>
-			<section id="about" class="show__main--about">
-				<div class="show__main--taskContent __container">
-					<h3 class="beModel--aboutTitle">About us</h3>
-					<div class="show__main--item">
-						<img src="./assets/img/castingPage/about1.png" alt="">
-						<p class="castingAbout__text">
-							BeModel Просто будь моделью!
-						</p>
-					</div>
-					<div class="show__main--item">
-						<p class="castingAbout__text">
-							Модельное Агентство находит и развивает модель,
-							а затем помогает найти работу
-							в модельных агентствах по всему миру.
-							Новые лица, новые возможности,
-							новые горизонты для каждой.
-						</p>
-						<img src="./assets/img/castingPage/about2.png" alt="">
-					</div>
-					<div class="show__main--item">
-						<img src="./assets/img/castingPage/about3.png" alt="">
-						<p class="castingAbout__text">
-							Твой путь к успеху начинается здесь.
-							Мы верим в тебя!
-						</p>
-					</div>
+			<div class="casting__model">
+				<h2 class="title">Models</h2>
+				<div class="main__models--gridContent __container">
+					<a href="./modelInfo.html" class="main__models--item">
+						<img src="./assets/img/modelsPage/1.jpeg" alt="">
+						<figcaption class="main__models--desc">
+							<p>KATE ROMANOVA</p>
+							<p>Height <strong>180 cm</strong></p>
+							<p>Bust <strong>81 cm</strong></p>
+							<p>Waist <strong>62 cm</strong></p>
+							<p>Hips <strong>90 cm</strong></p>
+							<p>Shoe <strong>41 eu</strong></p>
+							<p>Eyes <strong>Blue</strong></p>
+							<p>Hair <strong>Dark Brown</strong></p>
+						</figcaption>
+					</a>
+					<a href="./modelInfo.html" class="main__models--item">
+						<img src="./assets/img/modelsPage/2.jpeg" alt="">
+						<figcaption class="main__models--desc">
+							<p>VIKA BELAYA</p>
+							<p>Height <strong>180 cm</strong></p>
+							<p>Bust <strong>81 cm</strong></p>
+							<p>Waist <strong>62 cm</strong></p>
+							<p>Hips <strong>90 cm</strong></p>
+							<p>Shoe <strong>41 eu</strong></p>
+							<p>Eyes <strong>Blue</strong></p>
+							<p>Hair <strong>Dark Brown</strong></p>
+						</figcaption>
+					</a>
+					<a href="./modelInfo.html" class="main__models--item">
+						<img src="./assets/img/modelsPage/3.jpeg" alt="">
+						<figcaption class="main__models--desc">
+							<p>MASHA NOVIKOVA</p>
+							<p>Height <strong>180 cm</strong></p>
+							<p>Bust <strong>81 cm</strong></p>
+							<p>Waist <strong>62 cm</strong></p>
+							<p>Hips <strong>90 cm</strong></p>
+							<p>Shoe <strong>41 eu</strong></p>
+							<p>Eyes <strong>Blue</strong></p>
+							<p>Hair <strong>Dark Brown</strong></p>
+						</figcaption>
+					</a>
 				</div>
-			</section>
+				<a href="./models.html" class="casting__model--btn">All</a>
+			</div>
 			<section class="addVideo">
 				<h3 class="addVideo__title">
 					УЗНАЙТЕ ПРИ ПОМОЩИ ИСКУССТВЕННОГО ИНТЕЛЛЕКТА КАКАЯ У ВАС ПОХОДКА
@@ -182,11 +222,19 @@
 					@2025 Все права защищены.
 				</p>
 				<div class="footer__content--links">
-					<a href="##">ios</a>
-					<a href="##">android</a>
-					<a href="##">О шоу</a>
-					<a href="./casting.html">Подать заявку</a>
-					<a href="#contacts">Контакты</a>
+
+					<!-- Новые кнопки -->
+					<a href="##">
+						<img src="./assets/icon/AppStore.png" alt="AppStoreLink">
+					</a>
+					<a href="##">
+						<img src="./assets/icon/GooglePlay.png" alt="GooglePlayLink">
+					</a>
+					<!-- Новые кнопки -->
+
+					<a class="footer__content--link" href="##">О шоу</a>
+					<a class="footer__content--link" href="./casting.html">Подать заявку</a>
+					<a class="footer__content--link" href="#contacts">Контакты</a>
 				</div>
 			</div>
 		</footer>

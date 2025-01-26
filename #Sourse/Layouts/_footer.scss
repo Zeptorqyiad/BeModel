@@ -28,18 +28,8 @@
 			}
 		}
 		&--links {
-			a {
-				text-transform: uppercase;
-				@include textDefault($ff1, rgb(254, 250, 239), 20px, 400, 23px);
-				text-align: center;
-				padding: 10px 20px;
-				box-sizing: border-box;
-				border: 0.43px solid rgb(0, 0, 0);
-				border-radius: 21.3px;
-				background: rgb(50, 49, 49);
-				white-space: nowrap;
-			}
 			@include flexbox;
+			align-items: center;
 			gap: 50px;
 			@media (max-width: 934.98px) {
 				justify-content: center;
@@ -49,6 +39,18 @@
 			@media (max-width: 462.98px) {
 				flex-direction: column-reverse;
 			}
+		}
+		&--link {
+			text-transform: uppercase;
+			box-sizing: border-box;
+			@include textDefault($ff1, rgb(254, 250, 239), 20px, 400, 23px);
+			text-align: center;
+			padding: 10px 20px;
+			box-sizing: border-box;
+			border: 0.43px solid rgb(0, 0, 0);
+			border-radius: 21.3px;
+			background: rgb(50, 49, 49);
+			white-space: nowrap;
 		}
 	}
 }

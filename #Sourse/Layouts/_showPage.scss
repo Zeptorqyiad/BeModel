@@ -306,7 +306,7 @@
 }
 .show__main--about {
 	margin-top: 115px;
-	margin-bottom: 225px;
+	margin-bottom: 125px;
 }
 
 .parallax-container {
@@ -581,7 +581,6 @@ input[type="date"]:focus:before {
 	}
 	&--imageForm {
 		@include flexbox;
-		margin-bottom: 110px;
 		justify-content: space-between;
 		cursor: pointer;
 		@media (max-width: 998.98px) {
@@ -688,6 +687,7 @@ input[type="date"]:focus:before {
 	text-transform: uppercase;
 	margin: 0 auto;
 	width: 472px;
+	margin-top: 100px;
 	@include textDefault($ff1, rgb(254, 250, 239), 48px, 400, 54px);
 	text-align: center;
 	box-sizing: border-box;

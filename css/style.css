@@ -110,22 +110,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer__content--links {
   display: flex;
+  align-items: center;
   gap: 50px;
-}
-.footer__content--links a {
-  text-transform: uppercase;
-  font-family: Garamond;
-  color: rgb(254, 250, 239);
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 115%;
-  text-align: center;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  border: 0.43px solid rgb(0, 0, 0);
-  border-radius: 21.3px;
-  background: rgb(50, 49, 49);
-  white-space: nowrap;
 }
 @media (max-width: 934.98px) {
   .footer__content--links {
@@ -138,6 +124,22 @@ h1, h2, h3, h4, h5, h6 {
   .footer__content--links {
     flex-direction: column-reverse;
   }
+}
+.footer__content--link {
+  text-transform: uppercase;
+  box-sizing: border-box;
+  font-family: Garamond;
+  color: rgb(254, 250, 239);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 115%;
+  text-align: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 0.43px solid rgb(0, 0, 0);
+  border-radius: 21.3px;
+  background: rgb(50, 49, 49);
+  white-space: nowrap;
 }
 
 [class*=__container] {
@@ -182,6 +184,22 @@ body._lock {
   overflow: hidden;
 }
 
+.beModel__content--btn,
+.casting__model--btn,
+.form__btn,
+.casting__btn {
+  box-shadow: none;
+  transition: box-shadow 0.3s;
+  will-change: box-shadow;
+}
+
+.beModel__content--btn:hover,
+.casting__model--btn:hover,
+.form__btn:hover,
+.casting__btn:hover {
+  box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.3058823529);
+}
+
 .home__main {
   height: 100vh;
   overflow: hidden;
@@ -215,16 +233,16 @@ body._lock {
   min-width: 235px;
   height: 48px;
   box-sizing: border-box;
-  border: 1.21px solid rgb(11, 11, 11);
+  border: 1.21px solid #0b0b0b;
   border-radius: 22.27px;
-  background: rgb(246, 243, 236);
+  background: #f6f3ec;
   text-transform: uppercase;
-  color: rgb(38, 38, 38);
+  color: #262626;
   font-family: Garamond;
   font-size: 32px;
   font-weight: 400;
   line-height: 36px;
-  text-align: left;
+  text-align: center;
 }
 
 @media (max-width: 1024.98px) {
@@ -564,7 +582,7 @@ body._lock {
 
 .show__main--about {
   margin-top: 115px;
-  margin-bottom: 225px;
+  margin-bottom: 125px;
 }
 
 .parallax-container {
@@ -906,7 +924,6 @@ input[type=date]:focus:before {
 }
 .casting__form--imageForm {
   display: flex;
-  margin-bottom: 110px;
   justify-content: space-between;
   cursor: pointer;
 }
@@ -1029,6 +1046,7 @@ input[type=date]:focus:before {
   text-transform: uppercase;
   margin: 0 auto;
   width: 472px;
+  margin-top: 100px;
   font-family: Garamond;
   color: rgb(254, 250, 239);
   font-size: 48px;
@@ -1302,10 +1320,6 @@ input[type=date]:focus:before {
   max-width: 254px;
 }
 
-.casting__btn {
-  box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.3058823529);
-}
-
 .header__casting_content {
   justify-content: space-between;
 }
@@ -1462,13 +1476,51 @@ input[type=date]:focus:before {
   justify-content: center;
 }
 
+.casting__model {
+  margin: 100px 0;
+}
+.casting__model--btn {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  max-width: 174px;
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+  border-radius: 6.93px;
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04), 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+  font-family: Garamond;
+  color: rgb(50, 49, 49);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  background: rgb(254, 250, 239);
+  margin-top: 80px;
+  padding: 6px 8px;
+}
+
+.casting__model .title {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Garamond;
+  color: rgb(254, 250, 239);
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 113.3333333333%;
+  margin-bottom: 75px;
+}
+
 .addVideo {
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 70px;
-  margin-bottom: -100px;
+  background-image: url("../../assets/img/showPage/main/01.jpeg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .addVideo__title {
   text-align: center;
@@ -1486,12 +1538,11 @@ input[type=date]:focus:before {
   border: 1.11px solid rgb(13, 13, 13);
   border-radius: 11.06px;
   box-shadow: 0px 4.42px 11.06px 0px rgba(0, 0, 0, 0.25);
-  background: rgba(250, 246, 237, 0.6);
 }
 .itemVideo p {
   position: absolute;
-  width: 162px;
-  bottom: 50px;
+  width: 179px;
+  bottom: 40px;
   right: 50%;
   transform: translate(50%, 0);
   display: flex;
@@ -1501,9 +1552,9 @@ input[type=date]:focus:before {
   z-index: 20;
   font-family: Garamond;
   color: rgb(50, 49, 49);
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 118.1818181818%;
+  line-height: 131.25%;
   text-transform: uppercase;
   text-align: center;
 }
