@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css" />
+	<title>Popup</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- При добавлении класса success, будет открываться этот попап  -->
+		<div id="popupSuccess" class="popup">
+			<div class="popup__body">
+				<div class="popup__content">
+					<p>Ваша заявка принята!</p>
+					<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M19.8751 31.099L27.4145 39.8289C27.5946 40.0374 27.9213 40.0206 28.0733 39.7908C29.3255 37.8973 34.2353 30.4812 37.7502 25.2792M58.5352 30.2676C58.5352 45.8793 45.8793 58.5352 30.2676 58.5352C14.6558 58.5352 2 45.8793 2 30.2676C2 14.6558 14.6558 2 30.2676 2C45.8793 2 58.5352 14.6558 58.5352 30.2676Z"
+							stroke="#3FA82D" stroke-width="2.4942" stroke-linecap="round" />
+					</svg>
+				</div>
+			</div>
+		</div>
+		<!-- При добавлении класса error, будет открываться этот попап  -->
+		<div id="popupError" class="popup error">
+			<div class="popup__body">
+				<div class="popup__content">
+					<p>Заполните все поля!</p>
+					<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M34 68C52.7777 68 68 52.7773 68 34C68 15.2227 52.7777 0 34 0C15.2223 0 0 15.2227 0 34C0 52.7773 15.2223 68 34 68ZM49.0627 18.9375C50.3125 20.1865 50.3125 22.2129 49.0627 23.4629L38.5255 34L49.0627 44.5371C50.3124 45.7871 50.3124 47.8135 49.0627 49.0625C47.8131 50.3125 45.787 50.3125 44.5372 49.0625L34 38.5254L23.4628 49.0625C22.2131 50.3125 20.187 50.3125 18.9373 49.0625C17.6876 47.8135 17.6876 45.7871 18.9373 44.5371L29.4745 34L18.9373 23.4629C17.6876 22.2129 17.6876 20.1865 18.9373 18.9375C20.1869 17.6875 22.213 17.6875 23.4628 18.9375L34 29.4746L44.5372 18.9375C45.787 17.6875 47.8131 17.6875 49.0627 18.9375Z"
+							fill="#A32525" />
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		// Popup
+
+		const popupLinks = document.querySelectorAll('.popup-link')
+		const body = document.querySelector('body')
+		const lockPadding = document.querySelectorAll('.lock-padding')
+
+		let unlock = true
+
+		const timeout = 800
+
+		if (popupLinks.length > 0) {
+			for (let index = 0; index < popupLinks.length; index++) {
+				const popupLink = popupLinks[index]
+				popupLink.addEventListener('click', function (e) {
+					const popupName = popupLink.getAttribute('href').replace('#', '')
+					const curentPopup = document.getElementById(popupName)
+					popupOpen(curentPopup)
+					e.preventDefault()
+				})
+			}
+		}
+
+		const popupCloseIcon = document.querySelectorAll('.close-popup')
+		if (popupCloseIcon.length > 0) {
+			for (let index = 0; index < popupCloseIcon.length; index++) {
+				const el = popupCloseIcon[index]
+				el.addEventListener('click', function (e) {
+					popupCLose(el.closest('.popup'))
+					e.preventDefault()
+				})
+			}
+		}
+
+		function popupOpen(curentPopup) {
+			if (curentPopup && unlock) {
+				const popupActive = document.querySelector('.popup.open')
+				if (popupActive) {
+					popupCLose(popupActive, open)
+				}
+				curentPopup.classList.add('open')
+				curentPopup.addEventListener('click', function (e) {
+					if (!e.target.closest('.popup__content')) {
+						popupCLose(e.target.closest('.popup'))
+					}
+				})
+			}
+		}
+		function popupCLose(popupActive, doUnlock = true) {
+			if (unlock) {
+				popupActive.classList.remove('open')
+			}
+		}
+
+		document.addEventListener('keydown', function (e) {
+			if (e.which === 27) {
+				const popupActive = document.querySelector('.popup.open')
+				popupCLose(popupActive)
+			}
+		})
+	</script>
+</body>
+
+</html>

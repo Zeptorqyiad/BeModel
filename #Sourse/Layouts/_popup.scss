@@ -1,0 +1,65 @@
+@import "../components/ui";
+@import "../components/mixins";
+
+//=======================================================================
+
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #00000085;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.8s ease-out 0s;
+}
+.popup__body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 10px;
+}
+.popup.success {
+	opacity: 1;
+	visibility: visible;
+}
+.popup.success .popup__content {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+.popup.success .item-popup-content {
+	transform: translate(0px, 80px);
+	opacity: 1;
+}
+.popup.error {
+	opacity: 1;
+	visibility: visible;
+}
+.popup.error .popup__content {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+.popup.error .item-popup-content {
+	transform: translate(0px, 80px);
+	opacity: 1;
+}
+.popup__content {
+	position: relative;
+	z-index: 9999;
+	padding: 20px 0 5px 0;
+	background-color: #d9d9d9e5;
+	width: 500px;
+	color: #323131;
+	max-width: 569px;
+	border-radius: 20px;
+	transition: all 0.8s ease-out 0s;
+	opacity: 0;
+	text-align: center;
+	transform: translate(0px, -100%);
+	p {
+		margin-bottom: 20px;
+	}
+}

@@ -4,11 +4,11 @@
 //=======================================================================
 
 .main__models {
-	margin-bottom: 100px;
-	@media (max-width: 580px) {
-		margin-top: 60px;
-	}
 	&--gridContent {
+		margin-bottom: 100px;
+		@media (max-width: 580px) {
+			margin-top: 60px;
+		}
 		display: grid;
 		grid-gap: 40px;
 		grid-template-columns: repeat(3, minmax(80px, 400px));
@@ -87,5 +87,63 @@
 
 	p {
 		color: black;
+	}
+}
+
+//=======================================================================
+
+.pagination {
+	margin-bottom: 50px;
+	@media (max-width: 580px) {
+		margin-top: 60px;
+	}
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	padding: 0 10px;
+	@media (max-width: 520px) {
+		gap: 10px;
+	}
+	button {
+		background-color: transparent;
+		padding: 10px;
+		border: 1px solid #fff;
+		border-radius: 15px;
+		transition:
+			background-color 0.4s,
+			transform 0.3s,
+			color 0.4s;
+		cursor: pointer;
+		box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+		will-change: background-color, color, transform;
+		@include textDefault($ff1, #fff, 34px, 400, 44px);
+		@media (max-width: 520px) {
+			@include textDefault($ff1, #fff, 24px, 400, 24px);
+		}
+		@media (max-width: 425px) {
+			font-size: 18px;
+		}
+		&:not(:disabled):active {
+			transform: translateY(5%);
+			box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+		}
+		&:not(:disabled):hover {
+			background-color: white;
+			color: #000;
+		}
+		&:disabled {
+			opacity: 0.2;
+		}
+	}
+	span {
+		@include textDefault($ff1, #fff, 34px, 400, 44px);
+		@media (max-width: 520px) {
+			@include textDefault($ff1, #fff, 24px, 400, 24px);
+		}
+		@media (max-width: 425px) {
+			font-size: 18px;
+		}
 	}
 }

@@ -158,9 +158,13 @@
 						</div>
 					</div>
 					<div class="casting__form--imageForm">
+						<!-- Для каждого input file добавил checkmark галочку -->
+						<!-- При добавлении фотографии, должен меняться display:none на display:block. 
+						Пример ниже -->
 						<div class="imageForm__item">
 							<label for=""></label>
 							<input name="anfas" type="file" required>
+							<div class="checkmark" id="checkmark">&#10003;</div>
 							<span>
 								<strong>ФОТО ЛИЦА</strong>
 								в анфас
@@ -169,6 +173,7 @@
 						<div class=" imageForm__item">
 							<label for=""></label>
 							<input name="profil" type="file" required>
+							<div class="checkmark" id="checkmark">&#10003;</div>
 							<span>
 								<strong>ФОТО ЛИЦА</strong>
 								в анфас
@@ -177,6 +182,7 @@
 						<div class="imageForm__item">
 							<label for=""></label>
 							<input name="quatro" type="file" required>
+							<div class="checkmark" id="checkmark">&#10003;</div>
 							<span style="bottom: 46px">
 								<strong>3/4</strong>
 							</span>
@@ -184,6 +190,7 @@
 						<div class="imageForm__item">
 							<label for=""></label>
 							<input name="fullHeight" type="file" required>
+							<div class="checkmark" id="checkmark">&#10003;</div>
 							<span>
 								<strong>ФОТО ФИГУРЫ</strong>
 								в полный рост
@@ -192,7 +199,20 @@
 						<div class="imageForm__item">
 							<label for=""></label>
 							<input type="file" required>
+							<div class="checkmark" id="checkmark">&#10003;</div>
 						</div>
+
+						<!-- Для примера -->
+						<script>
+							// document.querySelector('input[type="file"]').addEventListener('change', function () {
+							// 	const checkmark = document.getElementById('checkmark');
+							// 	if (this.files.length > 0) {
+							// 		checkmark.style.display = 'block';
+							// 	} else {
+							// 		checkmark.style.display = 'none';
+							// 	}
+							// });
+						</script>
 					</div>
 					<button class="form__btn" type="submit">Подать заявку</button>
 				</form>
