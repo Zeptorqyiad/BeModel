@@ -885,6 +885,18 @@ input[type=date]:focus:before {
   line-height: 112.5%;
   text-align: left;
 }
+.casting__form--column select:-moz-placeholder-shown {
+  border-bottom: 2px solid #fefaef;
+}
+.casting__form--column select:placeholder-shown {
+  border-bottom: 2px solid #fefaef;
+}
+.casting__form--column select:focus:-moz-placeholder-shown {
+  border-color: #ff0000;
+}
+.casting__form--column select:focus:placeholder-shown {
+  border-color: #ff0000;
+}
 @media (max-width: 1079.98px) {
   .casting__form--column select {
     font-size: 24px;
@@ -909,7 +921,7 @@ input[type=date]:focus:before {
 .casting__form--column input {
   max-width: 513px;
   width: 100%;
-  border-bottom: 2px solid #fefaef;
+  border-bottom: 2px solid #88ff00;
   background-color: transparent;
   padding-left: 20px;
   height: 36px;
@@ -919,6 +931,18 @@ input[type=date]:focus:before {
   font-weight: 400;
   line-height: 112.5%;
   text-align: left;
+}
+.casting__form--column input:-moz-placeholder-shown {
+  border-bottom: 2px solid #fefaef;
+}
+.casting__form--column input:placeholder-shown {
+  border-bottom: 2px solid #fefaef;
+}
+.casting__form--column input:focus:-moz-placeholder-shown {
+  border-color: #ff0000;
+}
+.casting__form--column input:focus:placeholder-shown {
+  border-color: #ff0000;
 }
 @media (max-width: 1079.98px) {
   .casting__form--column input {
@@ -2003,6 +2027,7 @@ input[type=date]:focus:before {
 .main__modelInfo {
   overflow: hidden;
   overflow-y: scroll;
+  flex: 1 1 auto;
 }
 .main__modelInfo::-webkit-scrollbar {
   width: 0;
@@ -2153,6 +2178,31 @@ input[type=date]:focus:before {
 
 .model__footer {
   margin-top: 70px;
+}
+
+.fancybox-fullscreen {
+  width: 100vw !important;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fancybox__container {
+  min-width: 100vw;
+}
+
+.fancybox__backdrop {
+  min-width: 100vw;
+}
+
+.fancybox__thumbs {
+  --f-thumb-width: 120px !important;
+  --f-thumb-height: 170px !important;
+}
+
+.fancybox-image {
+  height: 90% !important;
 }
 
 .fullImage__content {

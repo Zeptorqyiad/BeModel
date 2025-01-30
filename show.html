@@ -112,15 +112,15 @@
 					<div class="casting__form--top">
 						<div class="casting__form--column">
 							<label for="fio"></label>
-							<input placeholder="ФИО" id="fio" name="fio" type="text">
+							<input placeholder="ФИО" id="fio" name="fio" type="text" required>
 							<label for="telephone"></label>
-							<input placeholder="Номер телефона" id="telephone" name="telephone" type="number">
+							<input placeholder="Номер телефона" id="telephone" name="telephone" type="number" required>
 							<label for="city"></label>
-							<input placeholder="Город фактического проживания" id="city" name="city" type="text">
+							<input placeholder="Город фактического проживания" id="city" name="city" type="text" required>
 							<label for="height"></label>
-							<input placeholder="Рост" id="height" name="height" type="number">
+							<input placeholder="Рост" id="height" name="height" type="number" required>
 							<label for="waist"></label>
-							<input placeholder="Объем талии" id="waist" name="waist" type="number">
+							<input placeholder="Объем талии" id="waist" name="waist" type="number" required>
 							<label for="eyes"></label>
 							<select id="eyes" name="eyes">
 								<option value="" disabled selected hidden>Цвет глаз</option>
@@ -131,19 +131,19 @@
 								<option value="">Серые</option>
 							</select>
 							<label for="instagram"></label>
-							<input placeholder="Профиль Instagram" id="instagram" name="instagram" type="url">
+							<input placeholder="Профиль Instagram" id="instagram" name="instagram" type="url" required>
 						</div>
 						<div class="casting__form--column">
 							<label for="Birthday"></label>
-							<input placeholder="Дата Рождения" id="Birthday" name="Birthday" type="text">
+							<input placeholder="Дата Рождения" id="Birthday" name="Birthday" type="text" required>
 							<label for="email"></label>
-							<input placeholder="E-mail" id="email" name="email" type="email">
+							<input placeholder="E-mail" id="email" name="email" type="email" required>
 							<label for="shoeSize"></label>
-							<input placeholder="Размер обуви" id="shoeSize" name="shoeSize" type="number">
+							<input placeholder="Размер обуви" id="shoeSize" name="shoeSize" type="number" required>
 							<label for="breastVolume"></label>
-							<input placeholder="Объём груди" id="breastVolume" name="breastVolume" type="number">
+							<input placeholder="Объём груди" id="breastVolume" name="breastVolume" type="number" required>
 							<label for="HipVolume"></label>
-							<input placeholder="Объём бёдер" id="HipVolume" name="HipVolume" type="number">
+							<input placeholder="Объём бёдер" id="HipVolume" name="HipVolume" type="number" required>
 							<label for="hairColor"></label>
 							<select id="eyes" name="eyes">
 								<option value="" disabled selected hidden>Цвет волос</option>
@@ -154,13 +154,13 @@
 								<option value="">Рыжая</option>
 							</select>
 							<label for="vk"></label>
-							<input placeholder="Профиль VK" id="vk" name="vk" type="url">
+							<input placeholder="Профиль VK" id="vk" name="vk" type="url" required>
 						</div>
 					</div>
 					<div class="casting__form--imageForm">
 						<div class="imageForm__item">
 							<label for=""></label>
-							<input name="anfas" type="file">
+							<input name="anfas" type="file" required>
 							<span>
 								<strong>ФОТО ЛИЦА</strong>
 								в анфас
@@ -168,7 +168,7 @@
 						</div>
 						<div class=" imageForm__item">
 							<label for=""></label>
-							<input name="profil" type="file">
+							<input name="profil" type="file" required>
 							<span>
 								<strong>ФОТО ЛИЦА</strong>
 								в анфас
@@ -176,14 +176,14 @@
 						</div>
 						<div class="imageForm__item">
 							<label for=""></label>
-							<input name="quatro" type="file">
+							<input name="quatro" type="file" required>
 							<span style="bottom: 46px">
 								<strong>3/4</strong>
 							</span>
 						</div>
 						<div class="imageForm__item">
 							<label for=""></label>
-							<input name="fullHeight" type="file">
+							<input name="fullHeight" type="file" required>
 							<span>
 								<strong>ФОТО ФИГУРЫ</strong>
 								в полный рост
@@ -191,7 +191,7 @@
 						</div>
 						<div class="imageForm__item">
 							<label for=""></label>
-							<input type="file">
+							<input type="file" required>
 						</div>
 					</div>
 					<button class="form__btn" type="submit">Подать заявку</button>

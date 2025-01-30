@@ -13,6 +13,7 @@
 .main__modelInfo {
 	overflow: hidden;
 	overflow-y: scroll;
+	flex: 1 1 auto;
 	&::-webkit-scrollbar {
 		width: 0;
 	}
@@ -130,3 +131,30 @@
 .model__footer {
 	margin-top: 70px;
 }
+
+.fancybox-fullscreen {
+	width: 100vw !important;
+	height: 100vh !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fancybox__container {
+	min-width: 100vw;
+}
+
+.fancybox__backdrop {
+	min-width: 100vw;
+}
+
+.fancybox__thumbs {
+	--f-thumb-width: 120px !important;
+	--f-thumb-height: 170px !important;
+}
+
+.fancybox-image {
+	height: 90% !important;
+}
+
+//=======================================================================

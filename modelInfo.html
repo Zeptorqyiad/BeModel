@@ -7,8 +7,12 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- FancyBox Image open -->
 	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<!-- FancyBox Image open -->
+
 	<title>Model Info</title>
 </head>
 
@@ -39,18 +43,55 @@
 					</div>
 				</div>
 				<div class="main__modelInfo--rightside">
-					<img src="./assets/img/modelInfoPage/01.jpeg" alt="">
-					<img src="./assets/img/modelInfoPage/02.jpeg" alt="">
-					<img src="./assets/img/modelInfoPage/03.jpeg" alt="">
-					<img src="./assets/img/modelInfoPage/04.jpeg" alt="">
-					<img src="./assets/img/modelInfoPage/05.jpeg" alt="">
-					<img src="./assets/img/modelInfoPage/06.jpeg" alt="">
-					<img src="./assets/img/modelInfoPage/07.jpeg" alt="">
-					<img src="./assets/img/modelInfoPage/08.jpeg" alt="">
-					<img src="./assets/img/modelInfoPage/01.jpeg" alt="">
-					<img src="./assets/img/modelInfoPage/02.jpeg" alt="">
-					<img src="./assets/img/modelInfoPage/03.jpeg" alt="">
-					<img src="./assets/img/modelInfoPage/04.jpeg" alt="">
+					<a href="./assets/img/modelInfoPage/01.jpeg" data-fancybox="gallery" data-caption="">
+						<img src="./assets/img/modelInfoPage/01.jpeg" />
+					</a>
+					<a href="./assets/img/modelInfoPage/02.jpeg" data-fancybox="gallery" data-caption="">
+						<img src="./assets/img/modelInfoPage/02.jpeg" />
+					</a>
+					<a href="./assets/img/modelInfoPage/03.jpeg" data-fancybox="gallery" data-caption="">
+						<img src="./assets/img/modelInfoPage/03.jpeg" />
+					</a>
+					<a href="./assets/img/modelInfoPage/04.jpeg" data-fancybox="gallery" data-caption="">
+						<img src="./assets/img/modelInfoPage/04.jpeg" />
+					</a>
+					<a href="./assets/img/modelInfoPage/05.jpeg" data-fancybox="gallery" data-caption="">
+						<img src="./assets/img/modelInfoPage/05.jpeg" />
+					</a>
+					<a href="./assets/img/modelInfoPage/06.jpeg" data-fancybox="gallery" data-caption="">
+						<img src="./assets/img/modelInfoPage/06.jpeg" />
+					</a>
+					<a href="./assets/img/modelInfoPage/07.jpeg" data-fancybox="gallery" data-caption="">
+						<img src="./assets/img/modelInfoPage/07.jpeg" />
+					</a>
+					<a href="./assets/img/modelInfoPage/08.jpeg" data-fancybox="gallery" data-caption="">
+						<img src="./assets/img/modelInfoPage/08.jpeg" />
+					</a>
+					<a href="./assets/img/modelInfoPage/01.jpeg" data-fancybox="gallery" data-caption="">
+						<img src="./assets/img/modelInfoPage/01.jpeg" />
+					</a>
+					<a href="./assets/img/modelInfoPage/02.jpeg" data-fancybox="gallery" data-caption="">
+						<img src="./assets/img/modelInfoPage/02.jpeg" />
+					</a>
+					<a href="./assets/img/modelInfoPage/03.jpeg" data-fancybox="gallery" data-caption="">
+						<img src="./assets/img/modelInfoPage/03.jpeg" />
+					</a>
+					<a href="./assets/img/modelInfoPage/04.jpeg" data-fancybox="gallery" data-caption="">
+						<img src="./assets/img/modelInfoPage/04.jpeg" />
+					</a>
+					<script>
+						Fancybox.bind("[data-fancybox]", {
+							Thumbs: {
+								type: "classic",
+							},
+							iframe: {
+								css: {
+									width: '100%',
+									height: '100%',
+								}
+							},
+						})
+					</script>
 				</div>
 			</div>
 		</main>

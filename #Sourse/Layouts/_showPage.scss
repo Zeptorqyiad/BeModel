@@ -563,7 +563,12 @@ input[type="date"]:focus:before {
 			height: 36px;
 			margin-bottom: 35px;
 			cursor: pointer;
-
+			&:placeholder-shown {
+				border-bottom: 2px solid #fefaef;
+			}
+			&:focus:placeholder-shown {
+				border-color: #ff0000;
+			}
 			@include textDefault($ff1, #fefaef, 32px, 400, 36px);
 			text-align: left;
 			@media (max-width: 1079.98px) {
@@ -586,12 +591,18 @@ input[type="date"]:focus:before {
 		input {
 			max-width: 513px;
 			width: 100%;
-			border-bottom: 2px solid #fefaef;
+			border-bottom: 2px solid #88ff00;
 			background-color: transparent;
 			padding-left: 20px;
 			height: 36px;
 			@include textDefault($ff1, #fefaef, 32px, 400, 36px);
 			text-align: left;
+			&:placeholder-shown {
+				border-bottom: 2px solid #fefaef;
+			}
+			&:focus:placeholder-shown {
+				border-color: #ff0000;
+			}
 			@media (max-width: 1079.98px) {
 				font-size: 24px;
 			}
@@ -599,7 +610,6 @@ input[type="date"]:focus:before {
 				font-size: 18px;
 				padding-left: 10px;
 			}
-			// Центровка input
 			@media (max-width: 576.98px) {
 				text-align: center;
 			}
