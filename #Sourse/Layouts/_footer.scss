@@ -8,7 +8,7 @@
 	background: #4c4a4a;
 	border-top: 1px solid #000;
 	&__content {
-		margin-top: 110px;
+		margin-top: 40px;
 		padding: 0 40px;
 		@include flexbox;
 		justify-content: space-between;
@@ -31,12 +31,15 @@
 			@include flexbox;
 			align-items: center;
 			gap: 50px;
+			@media (max-width: 1334.98px) {
+				gap: 10px;
+			}
 			@media (max-width: 934.98px) {
 				justify-content: center;
 				flex-wrap: wrap;
 				gap: 20px;
 			}
-			@media (max-width: 462.98px) {
+			@media (max-width: 542.98px) {
 				flex-direction: column-reverse;
 			}
 		}

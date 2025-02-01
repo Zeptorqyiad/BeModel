@@ -60,6 +60,9 @@
 }
 
 @media (max-width: 678.98px) {
+	.home__main {
+		overflow-y: hidden;
+	}
 	.home__main--logo {
 		img {
 			max-width: 300px;
