@@ -82,6 +82,9 @@
 		}
 	}
 }
+.main__models--desc p:first-child {
+	text-transform: uppercase;
+}
 
 .main__models--item:hover .main__models--desc {
 	transform: translateY(-20%) translate(-50%, 0);

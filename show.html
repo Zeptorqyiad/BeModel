@@ -25,31 +25,28 @@
 					</div>
 					<!-- При добавлении класса "open" ↓ меню открывается -->
 					<div class="burger__menu">
-						<a class="burger__menu--link" href="./index.html">Home</a>
-						<a class="burger__menu--link" href="./casting.html">Casting</a>
-						<a class="burger__menu--link" href="#about">About us</a>
-						<a class="burger__menu--link" href="#contacts">Contact</a>
+						<a class="burger__menu--link" href="./index.html">Главная</a>
+						<a class="burger__menu--link" href="./casting.html">Кастинг</a>
+						<a class="burger__menu--link" href="#about">О нас</a>
+						<a class="burger__menu--link" href="./contacts.html">Контакты</a>
 						<div class="burger__menu--bottomBlock">
-							<div class="burger__menu--image">
-								<img src="./assets/icon/BurgerIcon.png" alt="BurgerLogo">
-							</div>
-							<a href="#about">ios</a>
-							<a href="#contacts">android</a>
+							<a href="##"><img src="./assets/icon/AppStore.png" alt="AppStoreLink"></a>
+							<a href="##"><img src="./assets/icon/GooglePlay.png" alt="GooglePlayLink"></a>
 						</div>
 					</div>
 					<!-- Burger Menu -->
 
 					<div class="header__leftside">
-						<a class="header__link" href="./index.html">Home</a>
-						<a class="header__link" href="./casting.html">Casting</a>
+						<a class="header__link" href="./index.html">Главная</a>
+						<a class="header__link" href="./casting.html">Кастинг</a>
 					</div>
 					<div class="header__logotype">
 						<img src="./assets/icon/Logotype.png" alt="Logotype">
-						<span>SHOW</span>
+						<span>ШОУ</span>
 					</div>
 					<div class="header__rightside">
-						<a class="header__link" href="#about">About us</a>
-						<a class="header__link" href="#contacts">Contact</a>
+						<a class="header__link" href="#about">О нас</a>
+						<a class="header__link" href="./contacts.html">Контакты</a>
 					</div>
 				</div>
 			</div>
@@ -64,12 +61,17 @@
 
 				<!-- Параллакс контейнер -->
 				<div class="parallax-container">
-					<div class="parallax-image"></div>
+					<div class="parallax-image">
+						<a href="./participant.html" class="parallax-btn">Участницы</a>
+					</div>
 				</div>
 				<!-- Параллакс контейнер -->
 
 				<!-- Пришлось переписать на Grid с новыми тегами -->
-				<div id="about" class="show__main--taskContent __container">
+				<h3 id="about" class="casting__title">
+					О нас
+				</h3>
+				<div class="show__main--taskContent __container">
 					<div class="show__main--item item-1">
 						<img src="./assets/img/showPage/main/taskImage1.png" alt="taskImage">
 					</div>
@@ -158,9 +160,6 @@
 						</div>
 					</div>
 					<div class="casting__form--imageForm">
-						<!-- Для каждого input file добавил checkmark галочку -->
-						<!-- При добавлении фотографии, должен меняться display:none на display:block. 
-						Пример ниже -->
 						<div class="imageForm__item">
 							<label for=""></label>
 							<input name="anfas" type="file" required>
@@ -201,18 +200,6 @@
 							<input type="file" required>
 							<div class="checkmark" id="checkmark">&#10003;</div>
 						</div>
-
-						<!-- Для примера -->
-						<script>
-							// document.querySelector('input[type="file"]').addEventListener('change', function () {
-							// 	const checkmark = document.getElementById('checkmark');
-							// 	if (this.files.length > 0) {
-							// 		checkmark.style.display = 'block';
-							// 	} else {
-							// 		checkmark.style.display = 'none';
-							// 	}
-							// });
-						</script>
 					</div>
 					<button class="form__btn" type="submit">Подать заявку</button>
 				</form>
@@ -284,7 +271,7 @@
 				</div>
 			</section>
 			<div class="about__image">
-				<img src="./assets/img/showPage/main/01.jpeg" alt="Image">
+				<img src="./assets/img/showPage/main/01.png" alt="Image">
 			</div>
 		</main>
 		<footer class="footer">
@@ -304,7 +291,8 @@
 					<!-- Новые кнопки -->
 
 					<a class="footer__content--link" href="##">О шоу</a>
-					<a class="footer__content--link" href="./casting.html">Подать заявку</a>
+					<a class="footer__content--link" href="./casting.html">Кастинг</a>
+					<a class="footer__content--link" href="#about">О нас</a>
 					<a class="footer__content--link" href="#contacts">Контакты</a>
 				</div>
 			</div>

@@ -12,19 +12,52 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header__casting">
-			<a href="./index.html" class="header__casting--logo">
-				<img src="./assets/icon/Logotype.png" alt="Logotype">
-				<span>Будь моделью</span>
-			</a>
+		<header class="header">
+			<div class="header_container">
+				<div class="header__content">
+
+					<!-- Burger Menu -->
+					<!-- При добавлении класса "open" ↓ бургер открывается -->
+					<div class="burger__list">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<!-- При добавлении класса "open" ↓ меню открывается -->
+					<div class="burger__menu">
+						<a class="burger__menu--link" href="./index.html">Главная</a>
+						<a class="burger__menu--link" href="./casting.html">Кастинг</a>
+						<a class="burger__menu--link" href="#about">О нас</a>
+						<a class="burger__menu--link" href="./contacts.html">Контакты</a>
+						<div class="burger__menu--bottomBlock">
+							<img src="./assets/icon/AppStore.png" alt="AppStoreLink">
+							<img src="./assets/icon/GooglePlay.png" alt="GooglePlayLink">
+						</div>
+					</div>
+					<!-- Burger Menu -->
+
+					<div class="header__leftside">
+						<a class="header__link" href="./index.html">Главная</a>
+						<a class="header__link" href="./casting.html">Кастинг</a>
+					</div>
+					<div class="header__logotype">
+						<img src="./assets/icon/Logotype.png" alt="Logotype">
+						<span>КАСТИНГ</span>
+					</div>
+					<div class="header__rightside">
+						<a class="header__link" href="../show.html#about">О нас</a>
+						<a class="header__link" href="./contacts.html">Контакты</a>
+					</div>
+				</div>
+			</div>
 		</header>
 		<main>
 			<section class="show__main--casting __container">
 				<h3 class="casting__title">
-					Открыт кастинг
+					Стать моделью
 				</h3>
 				<p class="casting__subtitle">
-					Кастинг Всероссийского реалити-шоу в области индустрии моды
+					Быть моделью просто!
 				</p>
 				<form method="post" class="casting__form">
 					<div class="casting__form--top">

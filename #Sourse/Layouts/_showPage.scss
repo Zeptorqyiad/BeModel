@@ -336,11 +336,38 @@
 }
 .parallax-image {
 	height: 100%;
-	background-image: url("../../assets/img/showPage/topContentImage.jpeg");
+	background-image: url("../../assets/img/showPage/main/parallaxImage.png");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	opacity: 0.8;
+}
+.parallax-btn {
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	bottom: 40px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	text-transform: uppercase;
+	@include textDefault($ff1, #fefaef, 34px, 400, 39px);
+	text-align: center;
+	box-sizing: border-box;
+	border: 0.84px solid #fefaef;
+	border-radius: 30.17px;
+	background: #323131;
+	padding: 10px 60px;
+	box-shadow: inset;
+	transition: box-shadow 0.3s;
+	will-change: box-shadow;
+	&:hover {
+		box-shadow: 0 0 30px 0 white;
+	}
+	@media (max-width: 425px) {
+		padding: 10px 40px;
+		font-size: 26px;
+		max-width: 100%;
+	}
 }
 
 @media (max-width: 1227.98px) {
@@ -932,7 +959,7 @@ input[type="date"]:focus:before {
 //=======================================================================
 
 .checkmark {
-	display: none;
+	display: block;
 	position: absolute;
 	height: 100%;
 	top: 10px;
@@ -940,4 +967,8 @@ input[type="date"]:focus:before {
 	color: green;
 	font-size: 50px;
 	z-index: 9999;
+}
+
+.contacts {
+	margin-top: 0;
 }
